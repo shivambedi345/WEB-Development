@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Order placing </title>
+    <style>
+        
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+                background-image: url('nature abckground.jpg'); /* Replace with your actual image path */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+        
+        .container {
+            
+            overflow: hidden;
+            align-content: center;
+            text-align: center;
+            border: #110e0e 1px solid;
+            border-radius: 10px;
+            background: #35424a;
+            width: 60%;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+        }  
+        .header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .shoe-logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"] {
+            padding:10px;
+            margin: 10px 0;
+            border: 1px solid #110e0e;
+            border-radius: 5px;
+            cursor: pointer;
+            box-decoration-break: slice;
+        }
+        button {
+            
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+
+            padding: 10px;
+            margin-top: 10px;
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: #110e0e 0px 5px 15px;
+
+        }
+        button:hover {
+            background: #0a325a;
+            
+        }
+        .footer {
+        
+
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Optional: adds space between buttons */
+        }
+        
+        
+    </style>
+</head>
+<body><div class="container">
+    <div class="header">
+        <h1>Order Your Favorite Shoes</h1>
+    </div>
+    <img src="shoeLogo.jpg"  class="shoe-logo" alt="">
+    <div class="form-container">
+        <form action="#" method="post">
+            
+            <input type="text" placeholder="Name" id="name" name="name" required>
+
+            
+            <input type="email" placeholder="Email" id="email" name="email" required>
+
+            
+            <input type="text" placeholder="Shoe Size" id="shoe-size" name="shoe-size" required>
+            <div class="button-row">
+                <button type="submit">Add to cart</button>
+                <button type="submit">Place Order</button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Shoe Store. All rights reserved.</p>
+</div>
+</div>
+    
+</body>
+</html>
