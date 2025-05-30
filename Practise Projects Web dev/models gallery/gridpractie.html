@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Practice</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: #333;
+      font-family: Arial, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .grid-cont {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 150px); /* instead of 3 rows */
+      grid-auto-flow: dense;
+      gap: 10px;
+      background-color: #ffffff;
+      padding: 40px;
+    }
+
+    .grid-item {
+      color: rgb(3, 2, 2);
+      border: 1px solid #ccc;
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .item1 {
+        background-image: url('item1.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        grid-row: span 2;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item2 {
+        background-image: url('item2.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        grid-row: span 3;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item3 {
+        background-image: url('item3.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        grid-row: span 3;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item4 {
+        background-image: url('item4.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat; 
+              /* Prevents tiling */
+        grid-row: span 3;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item5 {
+        background-image: url('item5.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        grid-row: span 2;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }    
+    .item6 {
+        background-image: url('item6.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        grid-row: span 2;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+      
+    .item7 {
+        background-image: url('item7.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item8 {
+        background-image: url('item8.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+    .item9 {
+        background-image: url('item9.jpg'); /* Correct way */
+        background-size: cover;             /* Makes image cover the entire box */
+        background-position: center;        /* Centers the image */
+        background-repeat: no-repeat;       /* Prevents tiling */
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Models Gallery</h1>
+    <div class="grid-cont">
+      <div class="grid-item item1"></div>
+      <div class="grid-item item2"></div>
+      <div class="grid-item item3"></div>
+      <div class="grid-item item4"></div>
+      <div class="grid-item item5"></div>
+      <div class="grid-item item6"></div>
+      <div class="grid-item item7"></div>
+      <div class="grid-item item8"></div>
+      <div class="grid-item item9"></div>
+    </div>
+    <p style="text-align: center; color: #333; font-family: Arial, sans-serif;"> This is a grid layout with images as background for each item.</p>
+    <p style="text-align: center; color: #333; font-family: Arial, sans-serif;">&copy;Shivam raj - 2025</p>
+  </div>
+</body>
+</html>
